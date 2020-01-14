@@ -4,9 +4,16 @@
     background: #5b15ba;
     display: flex;
     flex-direction: column;
+    padding-top: 38px;
+}
+
+@media (max-width: 767px) {
+    .SideBar {
+        display: none;
+    }
 }
 
 .SideBar__Banner {
     padding-bottom: 25px;
-    margin: auto;
+    margin: auto auto 0 auto;
 }

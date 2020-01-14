@@ -1,31 +1,31 @@
 .InfoPanel {
-    margin: 8px 0;
+    margin: 8px;
     background: #5016A7;
     border-radius: 12px;
     display: flex;
+    flex: 1;
+    align-items: center;
 }
 
 .InfoPanel--small {
-    width: 21.5vw;
     height: 120px;
     padding: 8px 14px;
+    flex: 1;
 }
 
 .InfoPanel--token {
-    width: 22vw;
+    flex: 1;
     height: 140px;
     padding: 28px 15px;
 }
 
 .InfoPanel--badge {
-    width: 22vw;
+    flex: 1;
     height: 140px;
     padding: 28px 15px;
 }
 
 .InfoPanel--big {
-    width: 33.5vw;
-    height: 159px;
     padding: 25px;
 }
 
@@ -57,8 +57,7 @@
 }
 
 .InfoPanel__Data--big {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    margin-left: 15px;
 }
 
 
@@ -80,8 +79,21 @@
 }
 
 .InfoPanel__Data__Value--big {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 56px;
+}
+
+@media (max-width: 375px) {
+    .InfoPanel__Data__Value--big {
+        font-size: 20px !important;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .InfoPanel__Data__Value--big {
+        font-size: 25px !important;
+    }
 }
 
 
@@ -116,14 +128,17 @@
 /* InfoPanel__Image */
 
 .InfoPanel__Image {
-    position: relative;
+    display: flex;
+    width: 50px;
+    height: 50px;
 }
 
 .InfoPanel__Image--small {
-    width: 102.13px;
-    height: 102.13px;
+    width: 80px;
+    height: 80px;
     background-color: #FFFFFF;
     border-radius: 50%;
+    padding: 15px;
 }
 
 .InfoPanel__Image--token {
@@ -131,6 +146,7 @@
     height: 80px;
     background-color: #FFFFFF;
     border-radius: 50%;
+    padding: 15px;
 }
 
 .InfoPanel__Image--badge {
@@ -139,10 +155,6 @@
 }
 
 .InfoPanel__Image > img {
-    position: absolute; 
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
 }

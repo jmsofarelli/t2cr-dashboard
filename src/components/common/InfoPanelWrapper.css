@@ -1,6 +1,10 @@
 .InfoPanelWrapper {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .InfoPanelWrapper {
+      flex-direction: column;
+    }
 }

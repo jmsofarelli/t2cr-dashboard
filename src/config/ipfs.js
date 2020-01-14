@@ -1,1 +1,1 @@
-export const IPFS_GATEWAY = "https://ipfs.kleros.io";
+export const IPFS_GATEWAY = process.env.REACT_APP_IPFS_GATEWAY

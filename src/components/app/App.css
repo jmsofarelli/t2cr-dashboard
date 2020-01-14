@@ -7,14 +7,25 @@
 .App__Row {
   flex: 1;
   display: flex;
+  background: linear-gradient(249.79deg, #1e075f 16.9%, #4d00b4 69.8%);
 }
 
 .App__Page {
   flex: 1;
-  padding-top: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
-  background: linear-gradient(249.79deg, #1e075f 16.9%, #4d00b4 69.8%);
+  padding: 80px;
+}
+
+@media (max-width: 768px) {
+  .App__Page {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .App__Page {
+    padding: 50px;
+    padding-top: 50px;
+  }
 }
 
 .App__ErrorBox {
@@ -26,4 +37,8 @@
   border: 3px solid #1e075f;
   padding: 50px;
   text-align: center;
+}
+
+#page-wrap {
+  width: 100%;
 }

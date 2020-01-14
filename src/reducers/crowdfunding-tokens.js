@@ -1,4 +1,4 @@
-import { FETCH_CROWDFUNDING_TOKENS } from '../actions/types';
+import { FETCH_CROWDFUNDING_TOKENS } from '../actions/types'
 
 /*
 // This mock was created for visually testing the crowdfunding tokens and pagination
@@ -59,11 +59,11 @@ const defaultState = [
 */
 
 export default (state = null, action) => {
-    switch (action.type) {
-        case FETCH_CROWDFUNDING_TOKENS:
-            //return defaultState;
-            return action.payload;
-        default:
-            return state;
-    }
-};
+  switch (action.type) {
+    case FETCH_CROWDFUNDING_TOKENS:
+      // return defaultState;
+      return action.payload
+    default:
+      return state
+  }
+}
